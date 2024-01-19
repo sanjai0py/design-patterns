@@ -32,7 +32,6 @@ def getTax(country):
             return 2.0
 ```
 
-### encapsulation on class level
 
 ## 2. program to an interface not an implementation
 
@@ -41,3 +40,6 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 
 `publisher + subscriber = observer`
 
+## SOLID principle
+
+### S - Single responsibility   
