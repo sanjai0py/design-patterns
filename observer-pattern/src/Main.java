@@ -64,3 +64,33 @@
 //     }
 // }
 
+//  the interfaces
+
+// Observable
+public interface Observable{
+
+    // register the subscribers
+    public void registerObserver(Observer ob);
+
+    // remove subscriber
+    public void removeObserver(Observer ob);
+
+    // notify all the subscriber
+    public void notifyObservers();
+}
+
+// Observer
+public void Observer{
+    public void update(float temp, float humidity, float pressure); // concreate arguments!! arguments are tend to change??
+}
+
+// Display 
+public void Display{
+    public void display();
+}
+
+public class CurrentConditionDisplay implements Observer, Display{
+    private float temp;
+    private float humid;
+    private WeatherData weatherData;
+}
